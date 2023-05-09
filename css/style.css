@@ -170,7 +170,7 @@ h6 {
     align-items: center;
     position: absolute;
     bottom: 0;
-    top: 0;
+    top: 150px;
     left: 0;
     right: 0;
 }
@@ -262,7 +262,26 @@ h6 {
 }
 
 
-
+/* gif */
+.loader-body{
+    background-color: #010101;
+  }
+  .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    color: rgb(163, 00, 202);
+    text-align: left;
+    font-size: 50px;
+    font-family: Roboto Mono;
+    font-weight: 700;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+    &:after {
+      content:'_';
+    }
+  }
 /* ------------------ Menu Style ------------------- */
 #nav-menu-container {
     float: right;
@@ -313,7 +332,7 @@ h6 {
     color: rgb(163, 00, 202);
     font-family: 'Nunito', sans-serif;
     font-weight: 1000;
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
     outline: none;
     text-decoration: none;
