@@ -260,28 +260,6 @@ h6 {
     background: #ffffff;
     color: #1dbf73;
 }
-
-
-/* gif */
-.loader-body{
-    background-color: #010101;
-  }
-  .loader {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 300px;
-    color: rgb(163, 00, 202);
-    text-align: left;
-    font-size: 50px;
-    font-family: Roboto Mono;
-    font-weight: 700;
-    text-transform: uppercase;
-    transform: translate(-50%, -50%);
-    &:after {
-      content:'_';
-    }
-  }
 /* ------------------ Menu Style ------------------- */
 #nav-menu-container {
     float: right;
