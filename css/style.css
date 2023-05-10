@@ -2338,7 +2338,7 @@ body .footer .content {
 }
 
 .footer .content .container {
-    max-width: 768px;
+    max-width: 1100px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
