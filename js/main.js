@@ -7,6 +7,13 @@
         },
         speed: 400
     });
+     // typing text animation script
+     var typed = new Typed(".typing", {
+        strings: ["Coder", "Developer", "Ethical Hacker", "Freelancer", "Gamer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
 
     // Mobile Navigation
     if ($('#nav-menu-container').length) {
