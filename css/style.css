@@ -136,7 +136,7 @@ h6 {
       font-size: 40px;
       margin-left: 0;
       text-align: center;
-      padding-left: 40px;
+      padding-left: 300px;
     }
   
     .home .home-content .text-3 {
@@ -155,7 +155,7 @@ h6 {
     display: flex;
     /* background: url("/img/banner.jpg") no-repeat center; */
     height: 10vh;
-    color: rgb(255, 246, 246);
+    color: rgb(0, 0, 0);
     min-height: 200px;
     background-size: cover;
     background-attachment: fixed;
