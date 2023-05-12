@@ -108,24 +108,24 @@ h6 {
 
 /* changebox */
 .home {
-    /* display: flexbox; */
+    display: flexbox;
     /* background: url("/img/banner.jpg") no-repeat center; */
-    /* height: 100vh; */
+    height: 20vh;
     color: white;
-    /* min-height: 500px; */
-    /* background-size: cover; */
-    /* background-attachment: fixed; */
-        /* font-family: 'Ubuntu', sans-serif; */
+    min-height: 200px;
+    background-size: cover;
+    background-attachment: fixed;
+        font-family: 'Ubuntu', sans-serif;
 }
 
-/* .home .max-width {
+.home .max-width {
     width: 100%;
     display: flex;
 }
 
 .home .max-width .row {
     margin-right: 0;
-} */
+}
 
 .home .home-content .text-1 {
     font-size: 27px;
