@@ -157,7 +157,7 @@ h6 {
     display: flex;
     /* background: url("/img/banner.jpg") no-repeat center; */
     height: 10vh;
-    color: rgb(175, 24, 59);
+    color: crimson;
     min-height: 200px;
     background-size: cover;
     background-attachment: fixed;
