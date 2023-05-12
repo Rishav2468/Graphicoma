@@ -14,6 +14,20 @@
         backSpeed: 60,
         loop: true
     });
+    var typed2 = new Typed(".typing-2", {
+        strings: ["Coder", "Developer", "Ethical Hacker", "Freelancer", "Gamer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+      });
+      
+      var typed2 = new Typed(".typing-3", {
+        strings: ["Coder", "Developer", "Ethical Hacker", "Freelancer", "Gamer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+      });
+    
 
     // Mobile Navigation
     if ($('#nav-menu-container').length) {
