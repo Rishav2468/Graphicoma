@@ -9,7 +9,7 @@
     });
      // typing text animation script
      var typed = new Typed(".typing", {
-        strings: ["Coder", "Developer", "Ethical Hacker", "Freelancer", "Gamer"],
+        strings: ["Graphic designer", "digital marketer", "Print Designer", "web developer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
