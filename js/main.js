@@ -15,14 +15,14 @@
         loop: true
     });
     var typed2 = new Typed(".typing-2", {
-        strings: ["Coder", "Developer", "Ethical Hacker", "Freelancer", "Gamer"],
+        strings: ["Graphic designer", "digital marketer", "Print Designer", "web developer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
       });
       
       var typed2 = new Typed(".typing-3", {
-        strings: ["Coder", "Developer", "Ethical Hacker", "Freelancer", "Gamer"],
+        strings: ["Graphic designer", "digital marketer", "Print Designer", "web developer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
