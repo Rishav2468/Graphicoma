@@ -732,7 +732,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     transition: 0.3s;
     margin: 15px 30px 30px 30px;
     color: #ffffff;
-    background: linear-gradient(122deg, var(--color-accent-light) 0%, var(--color-accent-dark) 50%, var(--color-secondary) 100%);
+    background-color: var(--color-accent-light);
     ;
 }
 
