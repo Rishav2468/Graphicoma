@@ -69,13 +69,14 @@ h6 {
 /* ------------------ Header CSS ------------------- */
 .header {
     padding: 30px 0;
-    height: 92px;
+    height: 70px;
     position: fixed;
     left: 0;
     top: 0;
     right: 0;
     transition: all 0.3s;
     z-index: 997;
+    background-color: white;
 }
 
 .header.header-scrolled {
@@ -89,21 +90,10 @@ h6 {
     float: left;
 }
 
-.header .logo h1 {
-    font-size: 34px;
-    margin: 0;
-    line-height: 1;
-    letter-spacing: 5px;
-}
-
-.header .logo h1 a:hover {
-    color: #ffffff;
-}
-
 .header .logo img {
     padding: 0;
     margin: 0;
-    max-height: 500%;
+    max-height: 400%;
 }
 
 /* changebox */
@@ -732,7 +722,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     transition: 0.3s;
     margin: 15px 30px 30px 30px;
     color: #ffffff;
-    background-color: var(--color-accent-light);
+    background-color: var(--bg-color-accent--lignt);
     ;
 }
 
