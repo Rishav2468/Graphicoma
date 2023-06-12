@@ -327,3 +327,18 @@ $(document).ready(function() {
         $('.less').hide();
     });
 });
+$(document).ready(function() {
+    $('.more1').click(function(e) {
+        e.preventDefault();
+        $('.content').show();
+        $('.more').hide();
+        $('.less').show();
+    });
+
+    $('.less1').click(function(e) {
+        e.preventDefault();
+        $('.content').hide();
+        $('.more').show();
+        $('.less').hide();
+    });
+});
