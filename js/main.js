@@ -310,3 +310,20 @@ function getStepActiveMarkerPosX(currentStep) {
 function getElementWidth(elem) {
     return elem.clientWidth;
 }
+
+
+$(document).ready(function() {
+    $('.more').click(function(e) {
+        e.preventDefault();
+        $('.content').show();
+        $('.more').hide();
+        $('.less').show();
+    });
+
+    $('.less').click(function(e) {
+        e.preventDefault();
+        $('.content').hide();
+        $('.more').show();
+        $('.less').hide();
+    });
+});
