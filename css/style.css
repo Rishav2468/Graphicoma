@@ -64,19 +64,28 @@ h6 {
 .back-to-top i {
     color: #ffffff;
 }
+@media (max-width: 768px) {
+    .header .logo h1 {
+        font-size: 24px; /* Decrease the font size for mobile */
+        letter-spacing: 3px; /* Adjust letter spacing for mobile */
+    }
 
+    /* Additional styles for the logo on mobile */
+    /* ... */
+}
 
 /* ------------------ Header CSS ------------------- */
 .header {
     padding: 30px 0;
-    height: 70px;
-    position: fixed;
+    height: 80px;
+    position: fixed; /* Make the header sticky */
     left: 0;
     top: 0;
     right: 0;
     transition: all 0.3s;
     z-index: 997;
-    background-color: white;
+    background: #ffffff; /* Add background color to the sticky header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box-shadow to the sticky header */
 }
 
 .header.header-scrolled {
@@ -86,144 +95,54 @@ h6 {
     transition: all 0.3s;
 }
 
+
 .header .logo {
     float: left;
+}
+
+.header .logo h1 {
+    font-size: 34px;
+    margin: 0;
+    line-height: 1;
+    letter-spacing: 5px;
+}
+
+.header .logo h1 a:hover {
+    color: #ffffff;
 }
 
 .header .logo img {
     padding: 0;
     margin: 0;
-    max-height: 400%;
+    max-height: 500%;
 }
 
-/* changebox */
-@media only screen and (max-width: 767px) {
-    .home .max-width {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .home .home-content .text-1,
-    .home .home-content .text-2,
-    .home .home-content .text-3 {
-      text-align: center;
-    }
-  }
-
-@media only screen and (max-width: 767px) {
-    .home .max-width .row {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .home .home-content .text-1 {
-      font-size: 10px;
-      text-align: center;
-      padding-left: 1000px;
-    }
-  
-    .home .home-content .text-2 {
-      font-size: 12 px;
-      margin-left: 0;
-      text-align: center;
-      padding-left: 1000px;
-    }
-  
-    .home .home-content .text-3 {
-      font-size: 14px;
-      text-align: center;
-      margin: 10px 0;
-      padding-left: 1000px;
-    }
-  
-    .home .home-content a {
-      margin-top: 10px;
-      font-size: 20px;
-    }
-  }
-  
-.home {
-    display: flex;
-    /* background: url("/img/banner.jpg") no-repeat center; */
-    height: 10vh;
-    color:white;
-    min-height: 200px;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.home .max-width {
-    width: 100%;
-    display: flex;
-}
-
-.home .max-width .row {
-    margin-right: 0;
-}
-
-.home .home-content .text-1 {
-    font-size: 27px;
-}
-
-.home .home-content .text-2 {
-    font-size:50px;
-    font-weight: 600;
-    margin-left: -3px;
-}
-
-.home .home-content .text-3 {
-    font-size: 35px;
-    margin: 5px 0;
-}
-
-.home .home-content .text-3 span {
-    color: crimson;
-    font-weight: 500;
-}
-
-.home .home-content a {
-    display: inline-block;
-    background:rgb(163, 00, 202);
-    color: #fff;
-    font-size: 25px;
-    padding: 12px 36px;
-    margin-top: 20px;
-    font-weight: 700;
-    border-radius: 6px;
-    border: 2px solid rgb(163, 00, 202);
-    transition: all 0.3s ease;
-}
-
-.home .home-content a:hover {
-    color: rgb(163, 00, 202);
-    background: none;
-}
 
 /* ----------------- Intro Section ----------------- */
+/* ================================================= */
 
 .slider {
     display: table;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     background: #000;
+    margin-top: 80px; /* Add top margin to push the slider below the sticky header */
 }
+
 
 .slider .carousel-item {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
 }
 
 .slider .carousel-item::before {
     content: '';
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
     height: 100%;
-    opacity: 0.5;
     width: 100%;
     top: 0;
     right: 0;
@@ -232,13 +151,22 @@ h6 {
 }
 
 .slider .carousel-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     position: absolute;
     bottom: 0;
-    top: -202px;
-    left: -1000px;
+    top: 0;
+    left: 0;
     right: 0;
 }
 
@@ -248,11 +176,6 @@ h6 {
 
 .slider .carousel-content {
     text-align: center;
-}
-
-.slider .carousel-content p {
-    display: inline-block;
-    width: 100%;
 }
 
 .slider h2 {
@@ -332,6 +255,19 @@ h6 {
     background: #ffffff;
     color: #1dbf73;
 }
+
+@media (max-width: 768px) {
+    .slider {
+        height: 60vh; /* Decrease the height for mobile */
+    }
+
+    .slider h2 {
+        font-size: 32px; /* Decrease the font size for mobile */
+    }
+}
+
+
+
 /* ------------------ Menu Style ------------------- */
 #nav-menu-container {
     float: right;
@@ -382,7 +318,7 @@ h6 {
     color: rgb(163, 00, 202);
     font-family: 'Nunito', sans-serif;
     font-weight: 1000;
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
     outline: none;
     text-decoration: none;
@@ -401,7 +337,7 @@ h6 {
     margin: 4px 0 0 0;
     padding: 10px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
-    background: rgb(163, 00, 202);
+    background: #ffffff;
 }
 
 .nav-menu ul li {
@@ -441,7 +377,7 @@ h6 {
 }
 
 #mobile-nav-toggle i {
-    color: rgb(163, 00, 202);
+    color: #ffffff;
 }
 
 #mobile-nav {
@@ -541,16 +477,27 @@ body.mobile-nav-active #mobile-nav-toggle {
     color: #ffffff;
 }
 
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none; /* Hide the regular menu on mobile */
+    }
 
+    #mobile-nav-toggle {
+        display: block; /* Show the hamburger icon on mobile */
+    }
+
+    /* Additional styles for the mobile menu */
+    /* ... */
+}
 
 /* ---------------- Banner Section ----------------- */
 .banner {
     background: url("../img/banner.jpg") center top no-repeat;
     background-size: cover;
-    padding: 150px 0 60px 0;
+    height: 80vh; /* Set the banner height to 50% of the viewport height */
+    max-height: 400px; /* Set the maximum height for the banner to 600px */
     position: relative;
 }
-
 .banner::before {
     content: '';
     position: absolute;
@@ -593,7 +540,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 .banner .banner-box a:last-child {
     padding-left: 15px;
 }
-
 
 /* ------------- Section Header Style -------------- */
 .section-header {
@@ -2591,59 +2537,59 @@ body .footer .content {
   }
 
 
-/* ---------------- Responsive Design -------------- */
-@media (min-width: 1024px) {
-    .header .logo {
-        padding-left: 60px;
+    /* ---------------- Responsive Design -------------- */
+    @media (min-width: 1024px) {
+        .header .logo {
+            padding-left: 60px;
+        }
+
+        .slider p {
+            width: 60%;
+        }
+
+        .slider .carousel-control-prev,
+        .slider .carousel-control-next {
+            width: 5%;
+        }
+
+        #nav-menu-container {
+            padding-right: 60px;
+        }
     }
 
-    .slider p {
-        width: 60%;
+    @media (max-width: 768px) {
+        .back-to-top {
+            bottom: 15px;
+        }
+
+        .header .logo h1 {
+            font-size: 28px;
+        }
+
+        .header .logo img {
+            max-height: 40px;
+        }
+
+        .slider h2 {
+            font-size: 28px;
+        }
+
+        #nav-menu-container {
+            display: none;
+        }
+
+        #mobile-nav-toggle {
+            display: inline;
+        }
     }
 
-    .slider .carousel-control-prev,
-    .slider .carousel-control-next {
-        width: 5%;
-    }
+    @media (max-width: 61.9em) {
+        .team .team-over {
+            padding-top: 20px;
+        }
 
-    #nav-menu-container {
-        padding-right: 60px;
+        .team .card .social-nav {
+            margin-bottom: 15px;
+            padding: 0;
+        }
     }
-}
-
-@media (max-width: 768px) {
-    .back-to-top {
-        bottom: 15px;
-    }
-
-    .header .logo h1 {
-        font-size: 28px;
-    }
-
-    .header .logo img {
-        max-height: 40px;
-    }
-
-    .slider h2 {
-        font-size: 28px;
-    }
-
-    #nav-menu-container {
-        display: none;
-    }
-
-    #mobile-nav-toggle {
-        display: inline;
-    }
-}
-
-@media (max-width: 61.9em) {
-    .team .team-over {
-        padding-top: 20px;
-    }
-
-    .team .card .social-nav {
-        margin-bottom: 15px;
-        padding: 0;
-    }
-}
