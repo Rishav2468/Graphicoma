@@ -67,6 +67,14 @@
               }
             });
           </script>
+
+<script>
+    // JavaScript for mobile menu toggle
+    document.getElementById("mobile-nav-toggle").addEventListener("click", function () {
+      document.body.classList.toggle("mobile-nav-active");
+    });
+  </script>
+  
 </head>
 
 <body>
@@ -89,9 +97,14 @@
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="price.html">Price</a></li>
                     <li><a href="contact.html">Contact</a></li>
+
                 </ul>
             </nav>
         </div>
+        <button id="mobile-nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+          
     </header>
     
     <!-- Header Section End -->
