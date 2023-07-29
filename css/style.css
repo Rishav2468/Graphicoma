@@ -521,6 +521,68 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding-bottom: 30px;
 }
 
+/* Existing styles (above) ... */
+
+/* Mobile view adjustments */
+@media screen and (max-width: 767px) {
+    .banner {
+      padding-top: 100px;
+      padding-bottom: 30px;
+    }
+  
+    .slider {
+      height: 100vh;
+    }
+  
+    .slider h2 {
+      font-size: 30px;
+    }
+  
+    .slider p {
+      width: 90%;
+    }
+  
+    .header {
+      height: auto;
+      padding: 15px 0;
+    }
+  
+    .header .logo h1 {
+      font-size: 26px;
+      letter-spacing: 3px;
+    }
+  
+    #nav-menu-container {
+      display: none;
+    }
+  
+    #mobile-nav-toggle {
+      display: block;
+    }
+  
+    #mobile-nav {
+      width: 100%;
+      left: -100%;
+    }
+  
+    #mobile-nav ul {
+      padding: 30px 0;
+    }
+  
+    #mobile-nav ul li a {
+      padding: 12px 22px;
+      font-size: 16px;
+    }
+  
+    body.mobile-nav-active #mobile-nav {
+      left: 0;
+    }
+  
+    body.mobile-nav-active #mobile-nav-toggle i {
+      color: #1dbf73;
+    }
+  }
+  
 
 
 
