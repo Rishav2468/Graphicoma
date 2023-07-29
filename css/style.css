@@ -76,8 +76,8 @@ h6 {
     right: 0;
     transition: all 0.3s;
     z-index: 997;
-}
-
+    background: transparent; /* Set the initial background to transparent */
+  }
 .header.header-scrolled {
     background: white;
     padding: 20px 0;
@@ -114,7 +114,63 @@ h6 {
     transition: all 0.3s;
   }
   
-
+  @media (max-width: 768px) {
+    .header {
+      padding: 10px 15px;
+      height: auto;
+      background-color: #8b00c7; /* Purple color */
+    }
+  }
+  
+  .nav-menu {
+    float: right;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Adjust the menu items in mobile view */
+  @media (max-width: 768px) {
+    .nav-menu {
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      left: 0;
+      background-color: #8b00c7; /* Purple color */
+      display: none; /* Hide the menu items by default */
+    }
+  
+    /* Show the menu items when the mobile menu is active */
+    body.mobile-nav-active .nav-menu {
+      display: flex;
+    }
+  }
+  
+  .nav-menu li {
+    margin-left: 10px;
+  }
+  
+  .nav-menu a {
+    display: inline-block;
+    padding: 0 8px 10px 8px;
+    color: rgb(163, 0, 202);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 1000;
+    font-size: 12px;
+    text-transform: uppercase;
+    outline: none;
+    text-decoration: none;
+    color: white; /* Change text color to white */
+  }
+  
+  /* Adjust the menu item styles in mobile view */
+  @media (max-width: 768px) {
+    .nav-menu a {
+      padding: 10px 15px;
+    }
+  }
 
 /* ----------------- Intro Section ----------------- */
 /* ================================================= */
@@ -252,7 +308,13 @@ h6 {
     color: #1dbf73;
 }
 
-
+/* Full-screen slider in mobile view */
+@media (max-width: 768px) {
+    .slider .carousel-item {
+      height: 100vh;
+    }
+  }
+  
 
 /* ------------------ Menu Style ------------------- */
 #nav-menu-container {
