@@ -54,10 +54,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link rel='stylesheet'
         href='https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css'>
+
+        <script>
+            window.addEventListener("scroll", function () {
+              var header = document.querySelector(".header");
+              var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+          
+              if (scrolled > 50) {
+                header.classList.add("header-scrolled-up");
+              } else {
+                header.classList.remove("header-scrolled-up");
+              }
+            });
+          </script>
 </head>
 
 <body>
     <!-- Header Section Start -->
+    
     <header class="header">
         <div class="container-fluid">
             <div class="logo pull-left">
